@@ -1,7 +1,10 @@
+import { Navbar } from "../components/layout/Navbar";
+
 export default function Home() {
   return (
-    <main className="flex flex-1 items-center justify-center">
-      <p className="font-mono text-sm text-muted">Portfolio under construction.</p>
-    </main>
+    <>
+      <Navbar />
+      <main className="flex-1" />
+    </>
   );
 }

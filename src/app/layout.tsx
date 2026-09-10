@@ -16,9 +16,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://your-portfolio.vercel.app"; // PLACEHOLDER — update once deployed / custom domain is set
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: `${personal.name} — ${personal.role}`,
   description: personal.tagline,
+  openGraph: {
+    title: `${personal.name} — ${personal.role}`,
+    description: personal.tagline,
+    url: siteUrl,
+    siteName: `${personal.name} — Portfolio`,
+    images: ["/og-image.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${personal.name} — ${personal.role}`,
+    description: personal.tagline,
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export const viewport = {
+  themeColor: "#0a0f10",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

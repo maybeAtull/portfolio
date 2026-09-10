@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens for the whole site live here. Change a value once and it
+ * updates everywhere it's used (Tailwind classes like bg-background,
+ * text-accent, etc. read from these).
+ */
+:root {
+  --background: #0a0f10; /* page background — near-black, faint teal tint */
+  --surface: #10171a; /* the "card" container and raised panels */
+  --surface-hover: #16201f;
+  --foreground: #e9edee; /* primary text */
+  --muted: #8b979a; /* secondary text */
+  --border: #223032;
+  --accent: #35b3a3; /* teal — primary accent, echoes reference gradient */
+  --accent-warm: #d9a066; /* warm amber — secondary accent, echoes reference gradient */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-warm: var(--accent-warm);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Offsets anchor-scroll targets so the sticky navbar doesn't cover the
+   top of each section. */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Faint schema/grid texture used behind the hero — a small nod to
+   structured data without using a literal photo. */
+.grid-texture {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--foreground) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--foreground) 6%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

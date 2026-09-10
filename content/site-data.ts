@@ -81,6 +81,7 @@ export type Project = {
   tech: string[];
   githubUrl?: string;
   liveUrl?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -89,12 +90,29 @@ export const projects: Project[] = [
     description:
       "Architected a production-grade ETL/ELT pipeline on Databricks using PySpark and Delta Lake, with multi-source API ingestion, MERGE (upsert) operations, and automated workflow scheduling — plus Power BI dashboards tracking data quality, SLA compliance, and pipeline health in real time. Built on Medallion (Bronze/Silver/Gold) architecture with ACID-compliant lakehouse operations.",
     tech: ["Databricks", "PySpark", "Delta Lake", "Power BI"],
+    githubUrl: "https://github.com/maybeAtull/data-pipeline-medallion",
+  },
+  {
+    title: "SmartCart — E-Commerce Grocery App",
+    description:
+      "A full-stack grocery e-commerce app with user authentication, Razorpay-powered online payments alongside a cash-on-delivery option, an interactive landing page, live cart management, and real-time inventory tracking.",
+    tech: ["React", "Python", "Razorpay", "REST API"],
+    githubUrl: "https://github.com/maybeAtull/SmartCart",
+    image: "https://github.com/user-attachments/assets/dc72944d-22aa-41e8-9083-cd6af2a4e2f2",
+  },
+  {
+    title: "CampusCompanion — College Management Portal",
+    description:
+      "A full-stack campus portal supporting student admissions, fee payments via Instamojo, role-based dashboards for students, teachers, and principals, notes sharing, and automated email notifications for approvals.",
+    tech: ["PHP", "MySQL", "PHPMailer", "Instamojo API"],
+    githubUrl: "https://github.com/maybeAtull/CampusCompanion",
   },
   {
     title: "E-Courier — Full-Stack Data Application",
     description:
       "Designed and optimized normalized MySQL schemas for a logistics platform, implementing efficient SQL query patterns for high-frequency read/write operations across customer, order, and delivery entities.",
     tech: ["Java", "Servlets", "JDBC", "MySQL", "HTML/CSS", "JS"],
+    githubUrl: "https://github.com/maybeAtull/ECourier",
   },
 ];
 

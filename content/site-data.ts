@@ -6,28 +6,27 @@
 // ---------------------------------------------------------------------------
 
 export const personal = {
-  name: "Your Name", // PLACEHOLDER
+  name: "Atul Gaurav",
   role: "Data Engineer",
-  location: "City, Country", // PLACEHOLDER
-  email: "you@example.com", // PLACEHOLDER — used by the mailto Contact button
+  location: "Pune, India",
+  email: "atulgaurav786@gmail.com", // used by the mailto Contact button
   tagline:
-    "I build reliable data pipelines that turn raw, messy data into something a business can trust.", // PLACEHOLDER
+    "I automate data pipelines and production workflows — turning manual, error-prone processes into reliable, monitored systems.",
   bio: [
-    // PLACEHOLDER paragraph(s) — 1-3 short paragraphs work best.
-    "I'm a Data Engineer with hands-on experience designing and maintaining ETL/ELT pipelines across enterprise data warehouses and modern lakehouse platforms. I care about data correctness, pipeline observability, and keeping things simple enough that the next engineer (often me) can maintain them.",
-    "Recently I've been focused on building medallion-architecture pipelines on Databricks, migrating legacy Teradata workloads to Snowflake, and orchestrating everything reliably with AutoSys and shell scripting.",
+    "I'm a Data Engineer with hands-on experience across Python, SQL, Java, and Shell scripting — specializing in backend automation, API-driven workflows, and scalable data processing with Databricks and Spark. I care about query optimization, workflow reliability, and production support that catches problems before they become incidents.",
+    "At Bitwise, I've automated 12+ SQL production workflows with BTEQ, sustained 99%+ uptime on a large-scale Teradata environment, and kept 20+ AutoSys-scheduled workflows running with zero SLA breaches — while building out Tableau-based monitoring and ServiceNow incident documentation along the way.",
   ],
   quickFacts: [
     { label: "Experience", value: "1.8+ years" },
-    { label: "Focus", value: "ETL/ELT, Lakehouse, Data Warehousing" },
-    { label: "Based in", value: "City, Country" }, // PLACEHOLDER
+    { label: "Focus", value: "Data Automation, ETL/ELT, Production Support" },
+    { label: "Based in", value: "Pune, India" },
   ],
-  resumeFileName: "Your_Name_Resume.pdf", // PLACEHOLDER — name the downloaded file gets
+  resumeFileName: "Atul_Gaurav_Resume.pdf",
 };
 
 export const socials = {
-  github: "https://github.com/your-username", // PLACEHOLDER
-  linkedin: "https://linkedin.com/in/your-profile", // PLACEHOLDER
+  github: "https://github.com/maybeAtull",
+  linkedin: "https://linkedin.com/in/atul-gaurav-878b2520a",
 };
 
 export const navLinks = [
@@ -46,12 +45,11 @@ export type EducationEntry = {
 };
 
 export const education: EducationEntry[] = [
-  // PLACEHOLDER — replace with your real education history
   {
-    degree: "B.Tech in Computer Science",
-    institution: "Your University",
-    period: "2018 — 2022",
-    notes: "Relevant coursework: Databases, Distributed Systems, Data Structures & Algorithms.",
+    degree: "Master of Computer Applications (MCA)",
+    institution: "DY Patil Institute of MCA and Management, Pune",
+    period: "2023 — 2025",
+    notes: "9.08 CGPA — Rank 1 (twice). Graduated top of batch in BCA with 8.93 CGPA.",
   },
 ];
 
@@ -63,25 +61,16 @@ export type ExperienceEntry = {
 };
 
 export const experience: ExperienceEntry[] = [
-  // PLACEHOLDER — replace with your real work history, most recent first
   {
-    role: "Data Engineer",
-    company: "Your Company",
-    period: "2024 — Present",
+    role: "Data Engineer L2",
+    company: "Bitwise",
+    period: "Nov 2024 — Present",
     bullets: [
-      "Built and maintained ELT pipelines moving data between Teradata, Snowflake, and Databricks.",
-      "Implemented medallion-architecture (bronze/silver/gold) Delta Lake tables to standardize downstream reporting.",
-      "Automated job scheduling and dependency management using AutoSys and shell scripting.",
-      "Partnered with BI stakeholders to deliver trusted datasets for Tableau dashboards.",
-    ],
-  },
-  {
-    role: "Data Engineer Intern",
-    company: "Previous Company",
-    period: "2023 — 2024",
-    bullets: [
-      "Wrote PySpark jobs to clean and transform large-scale datasets on Databricks.",
-      "Assisted in migrating legacy warehouse queries from Teradata to Snowflake.",
+      "Automated 12+ SQL production workflows using BTEQ, eliminating ~30% of manual operational effort and reducing batch failure risk in critical pipelines.",
+      "Sustained 99%+ uptime on a large-scale Teradata database environment through scripted performance tuning, access control management, and automated backup recovery.",
+      "Scheduled and monitored 20+ production workflows in AutoSys, driving average incident resolution under 2 hours with zero SLA breaches.",
+      "Monitored 10+ real-time KPIs (latency, job success rate, error frequency) using Tableau dashboards, enabling faster issue identification and reduced manual reporting.",
+      "Standardized incident documentation in ServiceNow, reducing repeat production incidents through root-cause analysis and post-mortem templates.",
     ],
   },
 ];
@@ -95,27 +84,17 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // PLACEHOLDER — replace with your real projects
   {
-    title: "Medallion-Architecture ETL Pipeline",
+    title: "End-to-End Data Pipeline with Monitoring & Alerting",
     description:
-      "End-to-end Databricks pipeline ingesting raw data into a bronze layer, cleaning/conforming it into silver, and aggregating curated gold tables for reporting.",
-    tech: ["Databricks", "PySpark", "Delta Lake", "AutoSys"],
-    githubUrl: "https://github.com/your-username/medallion-pipeline", // PLACEHOLDER
+      "Architected a production-grade ETL/ELT pipeline on Databricks using PySpark and Delta Lake, with multi-source API ingestion, MERGE (upsert) operations, and automated workflow scheduling — plus Power BI dashboards tracking data quality, SLA compliance, and pipeline health in real time. Built on Medallion (Bronze/Silver/Gold) architecture with ACID-compliant lakehouse operations.",
+    tech: ["Databricks", "PySpark", "Delta Lake", "Power BI"],
   },
   {
-    title: "Teradata to Snowflake Migration",
+    title: "E-Courier — Full-Stack Data Application",
     description:
-      "Migrated a set of legacy Teradata ETL workloads to Snowflake, re-writing SQL for Snowflake's engine and validating output parity against production.",
-    tech: ["Teradata", "Snowflake", "SQL", "Shell Scripting"],
-    githubUrl: "https://github.com/your-username/teradata-snowflake-migration", // PLACEHOLDER
-  },
-  {
-    title: "Sales Analytics Dashboard",
-    description:
-      "Built a curated data mart feeding a Tableau dashboard used by regional sales teams to track pipeline health and conversion metrics.",
-    tech: ["Snowflake", "SQL", "Tableau"],
-    githubUrl: "https://github.com/your-username/sales-analytics-dashboard", // PLACEHOLDER
+      "Designed and optimized normalized MySQL schemas for a logistics platform, implementing efficient SQL query patterns for high-frequency read/write operations across customer, order, and delivery entities.",
+    tech: ["Java", "Servlets", "JDBC", "MySQL", "HTML/CSS", "JS"],
   },
 ];
 
@@ -126,19 +105,27 @@ export type SkillCategory = {
 
 export const skills: SkillCategory[] = [
   {
-    category: "Data Warehousing",
-    skills: ["Teradata", "Snowflake", "SQL"],
+    category: "Data Engineering",
+    skills: ["ETL/ELT Pipeline Design", "PySpark", "Delta Lake", "MERGE Operations", "Data Quality", "Batch Processing", "DBT Basics"],
   },
   {
-    category: "Big Data & Processing",
-    skills: ["PySpark", "Databricks", "Delta Lake", "Medallion Architecture"],
+    category: "Databases & Query",
+    skills: ["Teradata", "Snowflake", "MySQL", "MongoDB", "SQL Optimization", "BTEQ"],
   },
   {
-    category: "Orchestration & Scripting",
-    skills: ["AutoSys", "Shell Scripting"],
+    category: "Cloud & Platform",
+    skills: ["Azure", "Databricks", "Spark"],
   },
   {
-    category: "BI & Visualization",
-    skills: ["Tableau"],
+    category: "Orchestration & Automation",
+    skills: ["AutoSys", "Shell Scripting", "CI/CD", "Git"],
+  },
+  {
+    category: "Monitoring & Visualization",
+    skills: ["Tableau", "Power BI", "ServiceNow"],
+  },
+  {
+    category: "Languages",
+    skills: ["Python", "SQL", "Shell Scripting", "Core Java"],
   },
 ];

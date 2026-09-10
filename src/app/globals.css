@@ -6,14 +6,14 @@
  * text-accent, etc. read from these).
  */
 :root {
-  --background: #0a0f10; /* page background — near-black, faint teal tint */
-  --surface: #10171a; /* the "card" container and raised panels */
-  --surface-hover: #16201f;
-  --foreground: #e9edee; /* primary text */
-  --muted: #8b979a; /* secondary text */
-  --border: #223032;
-  --accent: #35b3a3; /* teal — primary accent, echoes reference gradient */
-  --accent-warm: #d9a066; /* warm amber — secondary accent, echoes reference gradient */
+  --background: #0b0c0d; /* page background — near-black, neutral like the fogged treeline */
+  --surface: #141517; /* the "card" container and raised panels */
+  --surface-hover: #1b1d20;
+  --foreground: #e8e9ea; /* primary text — soft fog-white */
+  --muted: #9a9ea3; /* secondary text — mid gray */
+  --border: #2a2c2f;
+  --accent: #b9bec3; /* silvery fog gray — primary accent, echoes the misty highlights */
+  --accent-warm: #6b7075; /* slate gray — secondary accent, echoes the tree silhouettes */
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }
@@ -45,13 +45,4 @@ body {
    top of each section. */
 section[id] {
   scroll-margin-top: 5.5rem;
-}
-
-/* Faint schema/grid texture used behind the hero — a small nod to
-   structured data without using a literal photo. */
-.grid-texture {
-  background-image:
-    linear-gradient(to right, color-mix(in srgb, var(--foreground) 6%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in srgb, var(--foreground) 6%, transparent) 1px, transparent 1px);
-  background-size: 40px 40px;
 }

@@ -21,7 +21,7 @@ export const personal = {
     { label: "Focus", value: "Data Automation, ETL/ELT, Production Support" },
     { label: "Based in", value: "Pune, India" },
   ],
-  resumeFileName: "Atul_Gaurav_Resume.pdf",
+  resumeFileName: "AtulGaurav_DataEngineer.pdf",
 };
 
 export const socials = {

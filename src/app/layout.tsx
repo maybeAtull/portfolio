@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://your-portfolio.vercel.app"; // PLACEHOLDER — update once deployed / custom domain is set
+const siteUrl = "https://maybeportfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

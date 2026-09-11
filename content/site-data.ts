@@ -17,7 +17,7 @@ export const personal = {
     "At Bitwise, I've automated 12+ SQL production workflows with BTEQ, sustained 99%+ uptime on a large-scale Teradata environment, and kept 20+ AutoSys-scheduled workflows running with zero SLA breaches — while building out Tableau-based monitoring and ServiceNow incident documentation along the way.",
   ],
   quickFacts: [
-    { label: "Experience", value: "1.8+ years" },
+    { label: "Experience", value: "2+ years" },
     { label: "Focus", value: "Data Automation, ETL/ELT, Production Support" },
     { label: "Based in", value: "Pune, India" },
   ],
